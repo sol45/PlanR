@@ -66,3 +66,11 @@ div.bold {
 	bottom: 100px;
 	right: 150px;
  }	
+ 
+ #weektype {
+	font-family: verdana;
+	display: inline;
+	font-weight: bold;
+	position: relitive;
+	margin-left: 20px;
+	

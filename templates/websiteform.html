@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="/static/style.css">
+		<script src="static/javascript.js"></script>
 	</head>
-	<body>
+	<body onload="runpage()">
 		<div id="title">	
 			<h1>PlanR</h1>
 			
@@ -17,19 +18,21 @@
 		<div id="form">
 			<form action="/" method="post">
 				<div class="bold">Phone number:</div>
-				<input type="number" value="Phone_number">
+				<input type="number" name="phone">
+				<div id="weektype"><input type="radio" name="week" value="1week" onclick="week1()" checked>1 week
+				<input type="radio" name="week" value="2week" onclick="week2()">2 Weeks</div>
 				<div class="bold">When do you want to receive your reminder text?</div>
 				<input type="range" name="time" min="4" max="12">
 				<div class="bold">Monday's lessons:</div>
-				<textarea name="monday" rows ="10" cols="40">put each lesson on a new line.</textarea>
+				<textarea name="monday" rows ="10" cols="40" placeholder="put each lesson on a new line."></textarea>
 				<div class="bold">Tuesday's lessons:</div>
-				<textarea name="tuesday" rows="10" cols="40">put each lesson on a new line.</textarea>
+				<textarea name="tuesday" rows="10" cols="40" placeholder="put each lesson on a new line."></textarea>
 				<div class="bold">Wednesday's lessons:</div>
-				<textarea name="Wednesday" rows="10" cols="40">put each lesson on a new line.</textarea>
+				<textarea name="wednesday" rows="10" cols="40" placeholder="put each lesson on a new line."></textarea>
 				<div class="bold">Thursday's lessons:</div>
-				<textarea name="Thursday" rows="10" cols="40">put each lesson on a new line.</textarea>
+				<textarea name="thursday" rows="10" cols="40" placeholder="put each lesson on a new line."></textarea>
 				<div class="bold">Friday's lessons:</div>
-				<textarea name="Thursday" rows="10" cols="40">put each lesson on a new line.</textarea>
+				<textarea name="friday" rows="10" cols="40" placeholder="put each lesson on a new line."></textarea>
 				<input id="button" type="submit" value="submit">
 			</form>
 		</div>
