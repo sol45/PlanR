@@ -15,26 +15,65 @@
 		<div id="description">
 			<p>PlanR is an easy to use website that will send you a text of what lessons you have each day. To begin simply fill out the form below:</p1>
 		</div>
-		<div id="form">
+		
+		<div id="weektype"><input type="radio" name="week" value="1week" onclick="week1()" checked>1 week
+		
+		<input type="radio" name="week" value="2week" onclick="week2()">2 Weeks</div>
+		
+		<div id="form1" class="form">
 			<form action="/" method="post">
 				<div class="bold">Phone number:</div>
 				<input type="number" name="phone">
-				<div id="weektype"><input type="radio" name="week" value="1week" onclick="week1()" checked>1 week
-				<input type="radio" name="week" value="2week" onclick="week2()">2 Weeks</div>
 				<div class="bold">When do you want to receive your reminder text?</div>
-				<input type="range" name="time" min="4" max="12">
+				<input type="range" name="time" min="4" max="12" data-popup-enabled="true">
 				<div class="bold">Monday's lessons:</div>
-				<textarea name="monday" rows ="10" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<textarea name="monday" rows ="7" cols="40" placeholder="put each lesson on a new line."></textarea>
 				<div class="bold">Tuesday's lessons:</div>
-				<textarea name="tuesday" rows="10" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<textarea name="tuesday" rows="7" cols="40" placeholder="put each lesson on a new line."></textarea>
 				<div class="bold">Wednesday's lessons:</div>
-				<textarea name="wednesday" rows="10" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<textarea name="wednesday" rows="7" cols="40" placeholder="put each lesson on a new line."></textarea>
 				<div class="bold">Thursday's lessons:</div>
-				<textarea name="thursday" rows="10" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<textarea name="thursday" rows="7" cols="40" placeholder="put each lesson on a new line."></textarea>
 				<div class="bold">Friday's lessons:</div>
-				<textarea name="friday" rows="10" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<textarea name="friday" rows="7" cols="40" placeholder="put each lesson on a new line."></textarea>
 				<input id="button" type="submit" value="submit">
 			</form>
 		</div>
+	<div id="form2" class="form">
+		<form action="/" method="post">
+			<div class="bold">Phone number:</div>
+			<input type="number" name="phone">
+			<div class="bold">When do you want to receive your reminder text?</div>
+			<input type="range" name="time" min="4" max="12" data-popup-enabled="true">
+			<div class="week">
+			<h3>Week one:</h3>
+				<div class="bold">Monday's lessons:</div>
+				<textarea name="monday" rows ="7" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<div class="bold">Tuesday's lessons:</div>
+				<textarea name="tuesday" rows="7" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<div class="bold">Wednesday's lessons:</div>
+				<textarea name="wednesday" rows="7" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<div class="bold">Thursday's lessons:</div>
+				<textarea name="thursday" rows="7" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<div class="bold">Friday's lessons:</div>
+				<textarea name="friday" rows="7" cols="40" placeholder="put each lesson on a new line."></textarea>
+			</div>
+			<div class="week">
+				<h3>Week two:</h3>
+				<div class="bold">Monday's lessons:</div>
+				<textarea name="monday2" rows ="7" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<div class="bold">Tuesday's lessons:</div>
+				<textarea name="tuesday2" rows="7" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<div class="bold">Wednesday's lessons:</div>
+				<textarea name="wednesday2" rows="7" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<div class="bold">Thursday's lessons:</div>
+				<textarea name="thursday2" rows="7" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<div class="bold">Friday's lessons:</div>
+				<textarea name="friday2" rows="7" cols="40" placeholder="put each lesson on a new line."></textarea>
+				<input id="button" type="submit" value="submit">
+			</div>
+		</form>
+	</div>
+		
 	</body>
 </html>
