@@ -13,19 +13,29 @@
 			<h4>By Sol Harter</h4>
 		</div>		
 		<div id="description">
-			<p>PlanR is an easy to use website that will send you a text of what lessons you have each day. To begin simply fill out the form below:</p1>
+			<p>PlanR is an easy to use web service that will send you a text message of what school lessons you have each day. To begin simply fill out the form below:</p1>
 		</div>
+		<p>How many weeks are in your timetable?</p>
+		<div id="weektype"><input type="radio" name="week" value="1week" onclick="week1()" checked>one week
 		
-		<div id="weektype"><input type="radio" name="week" value="1week" onclick="week1()" checked>1 week
-		
-		<input type="radio" name="week" value="2week" onclick="week2()">2 Weeks</div>
+		<input type="radio" name="week" value="2week" onclick="week2()">two weeks</div>
 		
 		<div id="form1" class="form">
 			<form action="/" method="post">
-				<div class="bold">Phone number:</div>
+				<p>Phone number:</p>
 				<input type="number" name="phone">
-				<div class="bold">When do you want to receive your reminder text?</div>
-				<input type="range" name="time" min="4" max="12" data-popup-enabled="true">
+				<p>When do you want to receive your reminder text?</p>
+				<div>
+					<select name="time">
+						<option value="4">04:00</option>
+						<option value="5">05:00</option>
+						<option value="6">06:00</option>
+						<option value="7">07:00</option>
+						<option value="8">08:00</option>
+						<option value="9">09:00</option>
+						<option value="10">10:00</option>
+					</select>
+				</div>
 				<div class="bold">Monday's lessons:</div>
 				<textarea name="monday" rows ="7" cols="40" placeholder="put each lesson on a new line."></textarea>
 				<div class="bold">Tuesday's lessons:</div>
@@ -44,7 +54,17 @@
 			<div class="bold">Phone number:</div>
 			<input type="number" name="phone">
 			<div class="bold">When do you want to receive your reminder text?</div>
-			<input type="range" name="time" min="4" max="12" data-popup-enabled="true">
+			<div>
+				<select name="time">
+						<option value="4">04:00</option>
+						<option value="5">05:00</option>
+						<option value="6">06:00</option>
+						<option value="7">07:00</option>
+						<option value="8">08:00</option>
+						<option value="9">09:00</option>
+						<option value="10">10:00</option>
+					</select>
+			</div>
 			<div class="week">
 			<h3>Week one:</h3>
 				<div class="bold">Monday's lessons:</div>

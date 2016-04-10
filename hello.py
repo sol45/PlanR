@@ -5,8 +5,10 @@ from flask import Flask, render_template, request
 THIS_DIR = os.path.dirname(__file__)
 
 
-app = Flask("PlanR")
+tmpl_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
+static_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static')
 
+app = Flask("PlanR", template_folder=tmpl_dir, static_folder=static_dir)
 
 
 @app.route('/', methods=['GET','POST'])
