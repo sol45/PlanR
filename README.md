@@ -1,4 +1,4 @@
-# [PlanR](http://http://sol45.pythonanywhere.com/)
+# [PlanR](http://sol45.pythonanywhere.com/)
 
 
 
