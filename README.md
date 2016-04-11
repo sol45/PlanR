@@ -3,7 +3,7 @@
 
 
 I created 'PlanR' as a simple dynamic website to teach myself basic web development
-while also to solving the problem of students not being able to remember their timetable.#
+while also to solving the problem of students not being able to remember their timetable.
 PlanR is a web service that will send you a text each morning of what lessons you have 
 that day. 
 
